@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Button Text Color Customizer Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Theme Customizer Demo</h1>
+    <p>Customize page text and button text colors independently.</p>
+  </header>
+
+  <main>
+    <section class="content">
+      <h2>Page Content</h2>
+      <p>This is regular page text. Its color is controlled by <code>--text-color</code>.</p>
+      <p>You can change the general text color without affecting the buttons.</p>
+      <button class="btn">Primary Button</button>
+      <button class="btn secondary">Secondary Button</button>
+    </section>
+
+    <aside class="settings">
+      <h3>Theme Settings</h3>
+      <label>
+        Page Text Color
+        <input type="color" id="textColor" value="#1a1a1a">
+      </label>
+      <label>
+        Button Text Color
+        <input type="color" id="buttonTextColor" value="#ffffff">
+      </label>
+      <label>
+        Button Background
+        <input type="color" id="buttonBg" value="#2563eb">
+      </label>
+      <button id="reset">Reset to Defaults</button>
+    </aside>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
