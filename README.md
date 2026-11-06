@@ -1,27 +1,16 @@
-# Button Text Color Customizer
+# Mail Club Studio – Button Text Color Customizer
 
-A simple demo showing how to let users customize the color of text on buttons **separately** from the color of text on the rest of the page.
+Demo for beta.mailclubstudio.com showing independent customization of button text color vs page text color.
 
-## How it works
-
-Uses CSS custom properties (variables):
-
-- `--text-color` — controls general page text
-- `--button-text-color` — controls button text independently
+## CSS Variables
+- `--text-color` — page / body text
+- `--button-text-color` — text on buttons (independent)
 - `--button-bg` — button background
 
-A settings panel updates these variables live and persists them in `localStorage`.
+## Deploy to Vercel for beta.mailclubstudio.com
+1. In Vercel, create a new project (or update existing) and import this GitHub repo: `mexiwaiianese/button-text-theme-customizer`
+2. Framework: Other / Static
+3. Add the custom domain `beta.mailclubstudio.com` in the project Domains settings.
+4. Update DNS as instructed by Vercel.
 
-## Files
-
-- `index.html` — main page
-- `style.css` — styles and CSS variables
-- `script.js` — theme application and persistence
-
-## Deploy to Vercel
-
-1. Connect this GitHub repository to a new Vercel project.
-2. Framework preset: Other (static).
-3. Deploy.
-
-You can later point an existing Vercel project at this GitHub repo instead of ChatGPT Sites.
+Once the domain points here, owners can customize button text color separately from the rest of the page text.
